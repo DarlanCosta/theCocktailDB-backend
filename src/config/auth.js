@@ -1,4 +1,4 @@
 export default {
-  secret: process.env.APP_SECRET,
+  secret: 'zap19203011remote',
   exporesIn: '7d',
 };
