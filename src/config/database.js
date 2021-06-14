@@ -2,11 +2,11 @@ require('dotenv/config');
 
 module.exports = {
   dialect: 'postgres',
-  host: process.env.DB_HOST,
-  port: '3311',
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
+  host:
+    'ls-917b9982650d743adf4c5bf796db4facb95cac3f.cgsbjlmax2ck.us-east-1.rds.amazonaws.com',
+  username: 'dbmasteruser',
+  password: '19921104abc',
+  database: 'mazzafctest',
   define: {
     timestamps: true,
     underscored: true,

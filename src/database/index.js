@@ -4,7 +4,6 @@ import User from '../app/models/User';
 
 import databaseConfig from '../config/database';
 
-console.log(databaseConfig);
 const models = [User];
 
 class Database {
@@ -14,9 +13,6 @@ class Database {
 
   init() {
     this.connection = new Sequelize(databaseConfig);
-    // this.connection = new Sequelize(
-    //   `postgres://${databaseConfig.username}:${databaseConfig.password}@${databaseConfig.host}:5432/${databaseConfig.database}`
-    // );
 
     models
       .map(model => model.init(this.connection))
